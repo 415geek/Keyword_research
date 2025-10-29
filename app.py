@@ -15,6 +15,9 @@ from utils.summarizer import generate_report
 st.set_page_config(page_title="市场调研智能分析系统", layout="wide")
 st.title("🔍 市场调研智能分析系统")
 
+reddit_client_id = st.secrets["REDDIT_CLIENT_ID"]
+reddit_client_secret = st.secrets["REDDIT_CLIENT_SECRET"]
+reddit_user_agent = st.secrets["REDDIT_USER_AGENT"]
 # ---- 侧边栏：参数 & 可视化引擎 ----
 with st.sidebar:
     st.header("设置")
